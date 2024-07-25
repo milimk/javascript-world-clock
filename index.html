@@ -11,7 +11,7 @@
     <main>
       <div class="content" id="content">
         <h1 class="title" id="title">World Clock</h1>
-        <select name="cities" id="cities">
+        <select name="cities" id="cities" class="cities">
           <option value="">Select a city</option>
           <option value="vancouver">Vancouver 🇨🇦</option>
           <option value="new-york">New York 🇺🇸</option>
@@ -19,10 +19,27 @@
           <option value="seoul">Seoul 🇰🇷</option>
           <option value="sydney">Sydney 🇦🇺</option>
         </select>
-        <div class="cityDetail" id="cityDetail">
-          <h2>Vancouver 🇨🇦</h2>
-          <div class="cityDate" id="cityDate">August 25, 2024</div>
-          <div class="cityTime" id="cityTime">1:45:25 AM</div>
+        <div class="cityGrid" id="cityGrid">
+          <div class="cityDetail" id="cityDetail">
+            <h2 class="cityName" id="cityName">Vancouver 🇨🇦</h2>
+            <div class="cityTime" id="cityTime">1:45:25 AM</div>
+            <div class="cityDate" id="cityDate">August 25, 2024</div>
+          </div>
+          <div class="cityDetail" id="cityDetail">
+            <h2 class="cityName" id="cityName">Vancouver 🇨🇦</h2>
+            <div class="cityTime" id="cityTime">1:45:25 AM</div>
+            <div class="cityDate" id="cityDate">August 25, 2024</div>
+          </div>
+          <div class="cityDetail" id="cityDetail">
+            <h2 class="cityName" id="cityName">Vancouver 🇨🇦</h2>
+            <div class="cityTime" id="cityTime">1:45:25 AM</div>
+            <div class="cityDate" id="cityDate">August 25, 2024</div>
+          </div>
+          <div class="cityDetail" id="cityDetail">
+            <h2 class="cityName" id="cityName">Vancouver 🇨🇦</h2>
+            <div class="cityTime" id="cityTime">1:45:25 AM</div>
+            <div class="cityDate" id="cityDate">August 25, 2024</div>
+          </div>
         </div>
       </div>
     </main>
@@ -35,7 +52,9 @@
         >GitHub</a
       >
       and hosted on
-      <a href="#" target="_blank">Netlify</a>
+      <a href="https://worldclock-milim.netlify.app/" target="_blank"
+        >Netlify</a
+      >
     </footer>
     <script src="src/index.js"></script>
   </body>

@@ -1,0 +1,66 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff5e4;
+}
+
+a {
+  color: #d94848;
+}
+
+.content {
+  margin: 30px auto;
+  max-width: 500px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.title {
+  padding-bottom: 15px;
+  margin: 0;
+  text-align: center;
+}
+
+.cities {
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid #d94848;
+  margin: 0 auto;
+  display: block;
+  color: #d94848;
+  width: 100%;
+  font-size: 15px;
+}
+
+.cityGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  padding-top: 20px;
+  gap: 10px;
+}
+
+.cityDetail {
+  text-align: center;
+  background-color: #ffefed;
+  padding-bottom: 30px;
+  border-radius: 7px;
+}
+
+.cityName {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.cityTime {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+footer {
+  border-top: 1px solid #ffefed;
+  text-align: center;
+  font-size: 12px;
+  color: #55585c;
+}
