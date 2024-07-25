@@ -33,11 +33,16 @@ a {
   font-size: 15px;
 }
 
+.gridContainer {
+  width: 100%;
+  padding-top: 10px;
+}
+
 .cityGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 10px;
   gap: 10px;
 }
 
@@ -46,11 +51,13 @@ a {
   background-color: #ffefed;
   padding-bottom: 30px;
   border-radius: 7px;
+  width: 100%;
 }
 
 .cityName {
   font-size: 22px;
   font-weight: 600;
+  padding: 30px 0 20px 0;
 }
 
 .cityTime {
