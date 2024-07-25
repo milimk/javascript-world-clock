@@ -77,6 +77,8 @@ function updateCity(event) {
     )}</div>
     <div class="cityDate">${selectedCityTime.format("MMMM D YYYY")}</div>
   </div>
+  <br />
+  <a href="/"> Back to all cities </a>
   `;
   }
 }
