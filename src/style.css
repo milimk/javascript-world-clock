@@ -35,14 +35,13 @@ a {
 
 .gridContainer {
   width: 100%;
-  padding-top: 10px;
+  padding-top: 25px;
 }
 
 .cityGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 0 auto;
-  padding-top: 10px;
   gap: 10px;
 }
 
