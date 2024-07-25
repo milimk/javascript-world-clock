@@ -61,11 +61,15 @@ setInterval(updateTime, 1000);
 
 function updateCity(event) {
   let selectedCityTimezone = event.target.value;
-  let selectedCityName = selectedCityTimezone.split("/")[1];
-  let selectedCityTime = moment().tz(selectedCityTimezone);
-  let selectedCityElement = document.querySelector("#gridContainer");
+  if (selectedCityTimezone === "current") {
+    selectedCityTimezone = moment.tz.guess();
+  }
+  if (selectedCityTimezone.length > 0) {
+    let selectedCityName = selectedCityTimezone.split("/")[1];
+    let selectedCityTime = moment().tz(selectedCityTimezone);
+    let selectedCityElement = document.querySelector("#gridContainer");
 
-  selectedCityElement.innerHTML = `
+    selectedCityElement.innerHTML = `
   <div class="cityDetail">
     <div class="cityName">${selectedCityName}</div>
     <div class="cityTime">${selectedCityTime.format(
@@ -74,6 +78,7 @@ function updateCity(event) {
     <div class="cityDate">${selectedCityTime.format("MMMM D YYYY")}</div>
   </div>
   `;
+  }
 }
 
 let selectCityElement = document.querySelector("#cities");
