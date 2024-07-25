@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
   </head>
   <body>
@@ -20,25 +22,15 @@
           <option value="sydney">Sydney 🇦🇺</option>
         </select>
         <div class="cityGrid" id="cityGrid">
-          <div class="cityDetail" id="cityDetail">
+          <div class="cityDetail" id="vancouver">
             <h2 class="cityName" id="cityName">Vancouver 🇨🇦</h2>
-            <div class="cityTime" id="cityTime">1:45:25 AM</div>
-            <div class="cityDate" id="cityDate">August 25, 2024</div>
+            <div class="cityTime" id="cityTime"></div>
+            <div class="cityDate" id="cityDate"></div>
           </div>
-          <div class="cityDetail" id="cityDetail">
-            <h2 class="cityName" id="cityName">Vancouver 🇨🇦</h2>
-            <div class="cityTime" id="cityTime">1:45:25 AM</div>
-            <div class="cityDate" id="cityDate">August 25, 2024</div>
-          </div>
-          <div class="cityDetail" id="cityDetail">
-            <h2 class="cityName" id="cityName">Vancouver 🇨🇦</h2>
-            <div class="cityTime" id="cityTime">1:45:25 AM</div>
-            <div class="cityDate" id="cityDate">August 25, 2024</div>
-          </div>
-          <div class="cityDetail" id="cityDetail">
-            <h2 class="cityName" id="cityName">Vancouver 🇨🇦</h2>
-            <div class="cityTime" id="cityTime">1:45:25 AM</div>
-            <div class="cityDate" id="cityDate">August 25, 2024</div>
+          <div class="cityDetail" id="new-york">
+            <h2 class="cityName" id="cityName">New York 🇺🇸</h2>
+            <div class="cityTime" id="cityTime"></div>
+            <div class="cityDate" id="cityDate"></div>
           </div>
         </div>
       </div>
